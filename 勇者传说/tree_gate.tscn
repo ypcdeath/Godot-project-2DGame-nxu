@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://tux5sbirv18j"]
+
+[ext_resource type="Script" uid="uid://csrtkos4kt3u6" path="res://Teleporter.gd" id="1_ahfyx"]
+[ext_resource type="Texture2D" uid="uid://xvhnh7pkrvgy" path="res://素材/Legacy-Fantasy - High Forest 2.0/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="2_kjyb1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_adixo"]
+size = Vector2(49.25, 90)
+
+[node name="TreeGate" type="Area2D"]
+script = ExtResource("1_ahfyx")
+path = "uid://bq1rwe5gxt2w8"
+metadata/_custom_type_script = "uid://csrtkos4kt3u6"
+
+[node name="Buildings" type="Sprite2D" parent="."]
+position = Vector2(-15, -36)
+scale = Vector2(2, 2)
+texture = ExtResource("2_kjyb1")
+region_enabled = true
+region_rect = Rect2(96, 128, 32, 64)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-17.375, -49)
+shape = SubResource("RectangleShape2D_adixo")

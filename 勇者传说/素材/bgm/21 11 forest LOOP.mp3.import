@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bama5iv0jqs0u"
+path="res://.godot/imported/21 11 forest LOOP.mp3-1944a9dee10c727506e9c4bd71b12621.mp3str"
+
+[deps]
+
+source_file="res://素材/bgm/21 11 forest LOOP.mp3"
+dest_files=["res://.godot/imported/21 11 forest LOOP.mp3-1944a9dee10c727506e9c4bd71b12621.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
