@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=3 uid="uid://3bhjke0x4set"]
+
+[ext_resource type="Script" uid="uid://cyut77ubbo1e7" path="res://sound_manager.gd" id="1_22ksp"]
+[ext_resource type="AudioStream" uid="uid://sids465to5lu" path="res://素材/sfx/07_human_atk_sword_1.ogg" id="1_mdjn0"]
+[ext_resource type="AudioStream" uid="uid://cq5rw38fi3r8p" path="res://素材/sfx/12_human_jump_3.ogg" id="2_22ksp"]
+[ext_resource type="AudioStream" uid="uid://dqq3y8e0yrvjf" path="res://素材/sfx/impactGlass_heavy_004.ogg" id="4_h8btt"]
+[ext_resource type="AudioStream" uid="uid://c006rsldccc0t" path="res://素材/sfx/impactTin_medium_004.ogg" id="5_7jwsb"]
+[ext_resource type="AudioStream" uid="uid://cdrrrk466jjyt" path="res://素材/Audio/impactPlate_medium_000.ogg" id="6_7jwsb"]
+[ext_resource type="AudioStream" uid="uid://jg8douve7wmk" path="res://素材/Audio/impactBell_heavy_000.ogg" id="7_h42hm"]
+
+[node name="SoundManager" type="Node"]
+process_mode = 3
+script = ExtResource("1_22ksp")
+
+[node name="SFX" type="Node" parent="."]
+
+[node name="attack" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("1_mdjn0")
+bus = &"SFX"
+
+[node name="jump" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("2_22ksp")
+bus = &"SFX"
+
+[node name="UIPress" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("4_h8btt")
+bus = &"SFX"
+
+[node name="UIFocus" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("5_7jwsb")
+bus = &"SFX"
+
+[node name="Boar_Hit" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("6_7jwsb")
+bus = &"SFX"
+
+[node name="Save_Stone" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("7_h42hm")
+bus = &"SFX"
+
+[node name="BGMPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"BGM"

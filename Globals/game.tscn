@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmtfflr1kpcq5"]
+
+[ext_resource type="Script" uid="uid://jgq8gw8qo3tx" path="res://Globals/game.gd" id="1_hv63o"]
+[ext_resource type="Script" uid="uid://bgr1mgpa30g6p" path="res://classes/Stats.gd" id="2_7rqii"]
+
+[node name="Game" type="CanvasLayer"]
+layer = 99
+script = ExtResource("1_hv63o")
+
+[node name="player_stats" type="Node" parent="."]
+script = ExtResource("2_7rqii")
+max_health = 3
+metadata/_custom_type_script = "uid://bgr1mgpa30g6p"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 384.0
+offset_bottom = 216.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
